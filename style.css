@@ -13,18 +13,17 @@ svg {
 }
 
 #Mouth1 {
-  transform-origin: top left;
+  transform-origin: 125px 125px;
   animation: lower-jaw .25s linear infinite alternate;
 }
 
 #Mouth2 {
-  transform-origin: bottom left;
+  transform-origin: 125px 125px;
   animation: upper-jaw .25s linear infinite alternate;
 }
 
 #PacMan {
-  transform-origin: center center;
-  transition: all .2s ease;
+  transition: all .1s ease;
 }
 
 @keyframes lower-jaw {
