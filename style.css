@@ -1,0 +1,48 @@
+body {
+  background-color: black;
+}
+p {
+  color: white;
+}
+#main {
+  width: 100%;
+}
+svg {
+  width: 1000px;
+  border: blue dashed 1px;
+}
+
+#Mouth1 {
+  transform-origin: top left;
+  animation: lower-jaw .25s linear infinite alternate;
+}
+
+#Mouth2 {
+  transform-origin: bottom left;
+  animation: upper-jaw .25s linear infinite alternate;
+}
+
+#PacMan {
+  transform-origin: center center;
+  transition: all .2s ease;
+}
+
+@keyframes lower-jaw {
+  0% {}
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes upper-jaw {
+  0% {}
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
