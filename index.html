@@ -16,27 +16,94 @@
       <button id="right">Right</button>
     </div>
     <svg viewBox="0 0 450 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-      <g id="PacMan" transform="translate(0,0) scale(0.5,0.5)">
+      
+
+      <!-- Create chart background -->
+      <rect x="0" y="0" width="450" height="800" fill="rgb(61, 61, 61)"/>
+    
+      <!-- Create x and y axes -->
+      <line x1="50" y1="750" x2="400" y2="750" stroke="white" stroke-width="3"/>
+      <line x1="50" y1="750" x2="50" y2="50" stroke="white" stroke-width="3"/>
+    
+      <!-- Add x-axis labels (years from 1991 to 2023) -->
+      <!-- Scale: 1 year = 13.793 pixels -->
+      <text x="50" y="770" font-family="Verdana" font-size="12" fill="white">Älvsbyn</text>
+<text x="100" y="770" font-family="Verdana" font-size="12" fill="white">
+  <tspan x="100" dy="0">B.S</tspan>
+  <tspan x="100" dy="13"> Tourism</tspan>
+</text>
+<text x="150" y="770" font-family="Verdana" font-size="12" fill="white">
+  <tspan x="150" dy="0">Dept.</tspan>
+  <tspan x="150" dy="13">of Geo.</tspan>
+  <tspan x="150" dy="13"></tspan>
+</text>
+
+<text x="200" y="770" font-family="Verdana" font-size="12" fill="white">IKSU</text>
+<text x="250" y="770" font-family="Verdana" font-size="12" fill="white">
+  <tspan x="250" dy="0">House</tspan>
+  <tspan x="250" dy="13">Kids</tspan>
+  <tspan x="250" dy="13">Marriage</tspan>
+</text>
+
+<text x="300" y="770" font-family="Verdana" font-size="12" fill="white">
+  <tspan x="300" dy="0">Nocco-</tspan>
+  <tspan x="300" dy="13">shop</tspan></text>
+  
+
+<text x="350" y="770" font-family="Verdana" font-size="12" fill="white">
+  <tspan x="350" dy="0">Grattis</tspan>
+  <tspan x="350" dy="13">Emma, PhD</tspan>
+  <tspan x="350" dy="13">!!!!!!!!</tspan>
+</text>
+<text x="400" y="770" font-family="Verdana" font-size="15" fill="white"></text>
+    
+      <!-- ...continue for all years -->
+    
+      <!-- Add y-axis labels (numbers from 0 to 9) -->
+      <!-- Scale: 1 unit = 70 pixels -->
+
+      <text x="10" y="100" font-family="Verdana" font-size="12" fill="white">1991</text>
+      <text x="10" y="175" font-family="Verdana" font-size="12" fill="white">2000</text>
+      <text x="10" y="200" font-family="Verdana" font-size="12" fill="white">2001</text>
+      <text x="10" y="225" font-family="Verdana" font-size="12" fill="white">2002</text>
+      <text x="10" y="250" font-family="Verdana" font-size="12" fill="white">2003</text>
+      <text x="10" y="275" font-family="Verdana" font-size="12" fill="white">2004</text>
+      <text x="10" y="300" font-family="Verdana" font-size="12" fill="white">2005</text>
+      <text x="10" y="325" font-family="Verdana" font-size="12" fill="white">2006</text>
+      <text x="10" y="350" font-family="Verdana" font-size="12" fill="white">2007</text>
+      <text x="10" y="375" font-family="Verdana" font-size="12" fill="white">2008</text>
+      <text x="10" y="400" font-family="Verdana" font-size="12" fill="white">2009</text>
+      <text x="10" y="425" font-family="Verdana" font-size="12" fill="white">2010</text>
+      <text x="10" y="450" font-family="Verdana" font-size="12" fill="white">2011</text>
+      <text x="10" y="475" font-family="Verdana" font-size="12" fill="white">2012</text>
+      <text x="10" y="500" font-family="Verdana" font-size="12" fill="white">2013</text>
+      <text x="10" y="525" font-family="Verdana" font-size="12" fill="white">2014</text>
+      <text x="10" y="550" font-family="Verdana" font-size="12" fill="white">2015</text>
+      <text x="10" y="575" font-family="Verdana" font-size="12" fill="white">2016</text>
+      <text x="10" y="600" font-family="Verdana" font-size="12" fill="white">2017</text>
+      <text x="10" y="625" font-family="Verdana" font-size="12" fill="white">2018</text>
+      <text x="10" y="650" font-family="Verdana" font-size="12" fill="white">2019</text>
+      <text x="10" y="675" font-family="Verdana" font-size="12" fill="white">2020</text>
+      <text x="10" y="700" font-family="Verdana" font-size="12" fill="white">2021</text>
+      <text x="10" y="725" font-family="Verdana" font-size="12" fill="white">2022</text>
+      <text x="10" y="750" font-family="Verdana" font-size="12" fill="white">2023</text>
+      <!-- ...continue for all numbers -->
+    
+      <!-- Add dotted line -->
+      <!-- Define path points according to the scale -->
+      <polyline points="70,50 70,110 70,450 70,450 90,460 90,465 90,470 90,475 310,480 90,490 310,500 70,510 90,515 310,535 180,540 70,560 90,565 70,570 310,570 90,580 160,610 160,660 250,670 170,690 380,740 " stroke="white" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+    
+      <g id="PacMan" transform="translate(0,0) scale(0.25,0.25)">
+        <!-- Pacman body here -->
+  
+
+    
         <path id="Body" d="M242.893,166.616c-17.161,48.556 -63.492,83.384 -117.893,83.384c-68.989,0 -125,-56.011 -125,-125c0,-68.989 56.011,-125 125,-125c52.892,0 98.155,32.922 116.398,79.374c-32.851,12.86 -116.233,45.807 -115.9,45.607c0.332,-0.199 85.618,30.449 117.395,41.635Z"
     style="fill:#fe0;" />
         <path id="Mouth2" d="M241.391,79.349c6.463,13.523 9.038,28.877 8.612,45.644l-124.938,0.011l116.326,-45.655Z" style="fill:#fe0;" />
         <path id="Mouth1" d="M242.666,166.576c5.484,-13.989 8.291,-27.865 7.37,-41.583l-125.037,-0.038l117.667,41.621Z" style="fill:#fe0;" />
         
       </g>
-      <!-- <path d="M300 130 L4500 100 L4500 100 L800 500 L3000 2000 L500 2000" stroke="#ffffff" fill="transparent" stroke-width="20" stroke-dasharray="20" /> -->
-    <!-- Add circles at each point -->
-<!-- <circle cx="300" cy="130" r="40" fill="#FF0000"/>
-<circle cx="4500" cy="100" r="50" fill="#FF0000"/>
-<circle cx="800" cy="500" r="50" fill="#FF0000"/>
-<circle cx="3000" cy="2000" r="50" fill="#FF0000"/>
-<circle cx="500" cy="2000" r="50" fill="#FF0000"/> -->
-
-<!-- Add labels to each circle -->
-<!-- <text x="300" y="130" fill="#FFFFFF" text-anchor="middle" dy="4em" font-size="50">Älvsbyn</text>
-<text x="4500" y="100" fill="#FFFFFF" text-anchor="middle" dy="1.4em" font-size="100">Central Perk</text>
-<text x="800" y="500" fill="#FFFFFF" text-anchor="middle" dy="2em" font-size="100">Museum</text>
-<text x="3000" y="2000" fill="#FFFFFF" text-anchor="middle" dy="1em" font-size="100">Point 4</text>
-<text x="500" y="2000" fill="#FFFFFF" text-anchor="middle" dy="1.2em" font-size="100">Home</text> -->
 </svg>
 </div>
   </body>
