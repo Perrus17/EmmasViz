@@ -1,6 +1,6 @@
 
 body {
-  background-color: black;
+  background-color: rgb(61, 61, 61);
 }
 p {
   color: white;
@@ -9,8 +9,9 @@ p {
   width: 100%;
 }
 svg {
-  width: 1000px;
-  border: blue dashed 1px;
+  width: 1170px;
+  height: 2532px;
+  border: rgb(219, 219, 219) dashed 1px;
 }
 
 #Mouth1 {
@@ -25,6 +26,25 @@ svg {
 
 #PacMan {
   transition: all .1s ease;
+}
+#controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#controls button {
+  background: #fe0;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+#controls #up, #controls #down {
+  margin: 0 20px;
 }
 
 @keyframes lower-jaw {

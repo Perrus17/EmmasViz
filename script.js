@@ -1,7 +1,7 @@
 var KEY = { a:65, d:68, w:87, s:83 };
-var move = 50;
-var maxMoveX = 5000; // Change to your SVG width
-var maxMoveY = 2500; // Change to your SVG height
+var move = 25;
+var maxMoveX = 1170; // Change to your SVG width
+var maxMoveY = 2523; // Change to your SVG height
 var pacman = document.getElementById("PacMan");
 var x = 0,
     y = 0,
@@ -34,5 +34,34 @@ document.documentElement.addEventListener('keydown', function(press) {
     default:
       break;
   }
-  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 1 : -1},1)`);
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
 }, false);
+document.getElementById('up').addEventListener('click', function() {
+  if (y - move >= 0) {
+    y -= move;
+  }
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+});
+
+document.getElementById('down').addEventListener('click', function() {
+  if (y + move <= maxMoveY) {
+    y += move;
+  }
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+});
+
+document.getElementById('left').addEventListener('click', function() {
+  if (x - move >= 0) {
+    x -= move;
+    direction = "left";
+  }
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+});
+
+document.getElementById('right').addEventListener('click', function() {
+  if (x + move <= maxMoveX) {
+    x += move;
+    direction = "right";
+  }
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+});
