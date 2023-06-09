@@ -9,8 +9,10 @@ p {
   width: 100%;
 }
 svg {
-  width: 1170px;
-  height: 2532px;
+  width: 100%;
+  height: auto;
+  max-width: 450px;  
+  max-height: 800px;  
   border: rgb(219, 219, 219) dashed 1px;
 }
 
