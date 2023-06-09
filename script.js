@@ -42,7 +42,7 @@ document.documentElement.addEventListener('keydown', function(press) {
       default:
       break;
   }
-  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.25 : -0.25},0.25)`);
 }, false);
 
 
@@ -51,7 +51,7 @@ document.getElementById('up').addEventListener('click', function() {
   if (y - adjustedMove >= 0) {
       y -= adjustedMove;
   }
-  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.25 : -0.25},0.25)`);
 });
 
 document.getElementById('down').addEventListener('click', function() {
@@ -59,7 +59,7 @@ document.getElementById('down').addEventListener('click', function() {
   if (y + adjustedMove <= maxMoveY) {
       y += adjustedMove;
   }
-  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.25 : -0.25},0.25)`);
 });
 
 document.getElementById('left').addEventListener('click', function() {
@@ -68,7 +68,7 @@ document.getElementById('left').addEventListener('click', function() {
       x -= adjustedMove;
       direction = "left";
   }
-  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.5 : -0.5},0.5)`);
+  pacman.setAttribute("transform", `translate(${x},${y}) scale(${direction === "right" ? 0.25 : -0.25},0.25)`);
 });
 
 document.getElementById('right').addEventListener('click', function() {
